@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="ekran" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button fx:id="readFileButton" layoutX="434.0" layoutY="81.0" mnemonicParsing="false" onAction="#readFile" prefHeight="25.0" prefWidth="71.0" text="Read" />
+        <TextField fx:id="path" layoutX="67.0" layoutY="81.0" prefHeight="25.0" prefWidth="270.0" />
+        <Label layoutX="67.0" layoutY="47.0" prefHeight="17.0" prefWidth="270.0" text="Enter path to file containing league information:" />
+        <TextArea fx:id="txt" layoutX="73.0" layoutY="130.0" prefHeight="230.0" prefWidth="270.0" />
+        <Label fx:id="label" layoutX="67.0" layoutY="357.0" prefHeight="17.0" prefWidth="411.0" />
+        <Button fx:id="generate" layoutX="376.0" layoutY="298.0" mnemonicParsing="false" onAction="#generateSchedule" prefHeight="25.0" prefWidth="71.0" text="Generate" />
+        <Button fx:id="save" layoutX="479.0" layoutY="298.0" mnemonicParsing="false" onAction="#saveFile" prefHeight="25.0" prefWidth="71.0" text="Save" />
+        <TextField fx:id="competitionName" layoutX="377.0" layoutY="161.0" prefHeight="25.0" prefWidth="184.0" />
+        <Label layoutX="393.0" layoutY="130.0" text="Enter competition name:" />
+        <RadioButton fx:id="english" layoutX="382.0" layoutY="245.0" mnemonicParsing="false" text="English">
+            <toggleGroup>
+                <ToggleGroup fx:id="togglegroup" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="bosnian" layoutX="493.0" layoutY="245.0" mnemonicParsing="false" text="Bosnian" toggleGroup="$togglegroup" />
+        <Label layoutX="413.0" layoutY="214.0" text="Output file language:" />
+        <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="neew" mnemonicParsing="false" text="New" />
+                        <MenuItem fx:id="saveM" mnemonicParsing="false" text="Save As" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem fx:id="defaultLang" mnemonicParsing="false" text=" Set Bosnian as default language" />
+                        <MenuItem fx:id="defaultLang1" mnemonicParsing="false" text=" Set Englih as default language" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="help" mnemonicParsing="false" text="Application Help" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</Pane>
