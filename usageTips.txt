@@ -1,0 +1,19 @@
+This is application for generating fixtures according to Berger tables.
+
+Application is used in the following manner:
+
+Firstly, user specifies path to file(eg. "C:\Users\Muaz\Desktop\primjerfajla.txt") which contains informations about teams 
+participating in the league in the following way:
+
+Number of teams: 4
+Teams:
+Barcelona
+Real Madrid
+Sevilla
+Gijon
+
+File MUST BE structured like this. Clicking on Read Button will read information.
+
+After reading information clicking on Generate will generate pairings.
+Clicking on Save Button generated data can be saved either as .txt or .pdf file.
+ 

@@ -1,0 +1,14 @@
+Broj ucesnika: 11
+Ucesnici:
+1. KK Ilidza
+2. KK Kos
+3. OKK Spars
+4. KK Kakanj
+5. KK Varda
+6. KK Partizan
+7. KK Cibona
+8. HKK Zrinjski
+9. KK Travnik
+10. KK Promo
+11. KK Vogosca
+
